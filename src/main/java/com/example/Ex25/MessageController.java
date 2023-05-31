@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageController {
 
     @Autowired
-    SimpMessagingTemplate simpMessagingTemplate;
+    private SimpMessagingTemplate simpMessagingTemplate;
 
     @PostMapping("/message")
     public void sendNotification(@RequestBody MessageDTO messageDTO) {
